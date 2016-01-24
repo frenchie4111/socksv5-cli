@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/frenchie4111/socksv5-cli#readme",
   "dependencies": {
-    "socksv5": "git+ssh://git@github.com/frenchie4111/socksv5.git",
+    "socksv5-frenchie4111": "0.0.6",
     "underscore": "^1.8.3"
   },
   "bin": {
