@@ -14,6 +14,15 @@ Ussage:
 socksv5 /full/path/to/config.json
 ```
 
+Config file generation:
+
+A basic config file generator is provided, it will try to create
+an unauthenticated proxy for every external network interface.
+
+```
+socksv5-gen > proxy_config.json
+```
+
 Config file format (See config.sample.json):
 
 ```
