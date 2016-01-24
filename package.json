@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/frenchie4111/socksv5-cli/issues"
   },
-  "homepage": "https://github.com/frenchie4111/socksv5-cli#readme"
+  "homepage": "https://github.com/frenchie4111/socksv5-cli#readme",
+  "dependencies": {
+    "socksv5": "git+ssh://git@github.com/frenchie4111/socksv5.git"
+  }
 }
