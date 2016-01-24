@@ -1,0 +1,19 @@
+{
+  "name": "socksv5-cli",
+  "version": "1.0.0",
+  "description": "Socksv5 server Cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/frenchie4111/socksv5-cli.git"
+  },
+  "author": "Mike Lyons <mdl0394@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frenchie4111/socksv5-cli/issues"
+  },
+  "homepage": "https://github.com/frenchie4111/socksv5-cli#readme"
+}
