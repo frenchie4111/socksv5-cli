@@ -1,6 +1,6 @@
 {
   "name": "socksv5-cli",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Socksv5 server Cli",
   "main": "index.js",
   "scripts": {
