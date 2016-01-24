@@ -18,5 +18,8 @@
   "homepage": "https://github.com/frenchie4111/socksv5-cli#readme",
   "dependencies": {
     "socksv5": "git+ssh://git@github.com/frenchie4111/socksv5.git"
+  },
+  "bin": {
+    "socksv5": "index.js"
   }
 }
