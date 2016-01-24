@@ -16,7 +16,7 @@ var config = _
 	.map( function( interface, name ) {
 		return {
 			host: interface[ 0 ].address,
-			port: +( '10' + interface[ 0 ].address.split( '.' )[ 3 ] )
+			port: 10000 + ( +interface[ 0 ].address.split( '.' )[ 3 ] )
 		}
 	} )
 	.value();
