@@ -21,6 +21,7 @@
     "underscore": "^1.8.3"
   },
   "bin": {
-    "socksv5": "index.js"
+    "socksv5": "index.js",
+    "socksv5-gen": "generator.js"
   }
 }
