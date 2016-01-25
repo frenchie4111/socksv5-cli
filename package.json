@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/frenchie4111/socksv5-cli#readme",
   "dependencies": {
+    "forever": "^0.15.1",
+    "initd-forever": "^0.1.8",
     "socksv5-frenchie4111": "0.0.6",
     "underscore": "^1.8.3"
   },
