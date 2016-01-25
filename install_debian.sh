@@ -27,6 +27,9 @@ chmod +x socksv5
 # Copy initd script
 cp socksv5 /etc/init.d/
 
+# Create base conf file
+socksv5-gen > /etc/socksv5.conf
+
 # Start initd script
 systemctl daemon-reload
 /etc/init.d/socksv5 start
@@ -35,6 +38,7 @@ systemctl daemon-reload
 echo "----"
 echo "Socksv5 should be installed as a system daemon now"
 echo " -> Logfile: /var/run/socksv5.log"
+echo " -> Config file: /etc/socksv5.conf"
 echo " -> Ussage"
 echo " --> Start: /etc/init.d/socksv5 start"
 echo " --> Restart: /etc/init.d/socksv5 restart"
