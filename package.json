@@ -24,6 +24,7 @@
   },
   "bin": {
     "socksv5": "index.js",
-    "socksv5-gen": "generator.js"
+    "socksv5-gen": "generator.js",
+    "socksv5-config": "config_manager.js"
   }
 }
