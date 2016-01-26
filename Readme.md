@@ -2,17 +2,21 @@
 
 Hosts socksv5 proxy when given a simple config
 
-Installation:
+# Installation:
 
 ```
 npm install -g socksv5-cli
 ```
 
-Ussage:
+# Ussage:
 
 ```
 socksv5 /full/path/to/config.json
 ```
+
+# Config
+
+## Config File Generation
 
 Config file generation:
 
@@ -22,6 +26,20 @@ an unauthenticated proxy for every external network interface.
 ```
 socksv5-gen > proxy_config.json
 ```
+
+## Config file management
+
+A utility for config file management is provided
+
+```
+socksv5-config
+```
+
+This file assumes that your config file is stored in `/etc/socksv5.conf`
+
+See `socksv5-config help` for more information about the config manager
+
+## Config File Examples 
 
 Config file format (See config.sample.json):
 
