@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Exit if any command fails
+set -e
+
 # Check if root
 if [[ $EUID -ne 0 ]]; then
    echo "Please run this script as root" 
@@ -13,9 +16,9 @@ echo " -> Installing NodeJS"
 echo " --> Adding nodejs to packages"
 curl -sL https://deb.nodesource.com/setup_4.x | bash - > /dev/null
 echo " --> Updating apt"
-apt-get -qq update
+apt-get -qq update > /dev/null
 echo " --> Installing nodejs via apt-get"
-apt-get -qq install -y nodejs build-essential
+apt-get -qq install -y nodejs build-essential > /dev/null
 
 # Install socksv5-cli
 echo " -> Installing socksv5-cli via npm"
