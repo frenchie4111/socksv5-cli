@@ -14,7 +14,7 @@ var exitAndPrint = function( error ) {
 
 var path = '/etc/socksv5.conf';
 
-if( args.length !== 1 ) {
+if( args.length >= 1 ) {
 	path = args[ 0 ];
 }
 
