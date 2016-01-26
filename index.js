@@ -12,25 +12,27 @@ var exitAndPrint = function( error ) {
 	process.exit( 2 );
 }
 
+var path = '/etc/socksv5.conf';
+
 if( args.length !== 1 ) {
-	exitAndPrint( 'Ussage: socksv5 <path/to/config.json>' );
+	path = args[ 0 ];
 }
 
-console.log( "Loading Config from: " + args[ 0 ] );
+console.log( "Loading Config from: " + path );
 
 var config; 
 
 try {
-	config = fs.readFileSync( args[ 0 ] );
+	config = fs.readFileSync( path );
 } catch( e ) {
 	console.error( e );
-	exitAndPrint( 'Failed to open: ' + args[ 0 ] );
+	exitAndPrint( 'Failed to open: ' + path );
 }
 
 try {
 	config = JSON.parse( config );
 } catch( e ) {
-	exitAndPrint( 'Failed to parse: ' + args[ 0 ] );
+	exitAndPrint( 'Failed to parse: ' + path );
 }
 
 if( _.isArray( config ) ) {

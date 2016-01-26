@@ -31,7 +31,7 @@ echo " --> Installed at ${DIR}"
 
 # Setup initd script
 echo " -> Creating init.d script"
-$DIR/node_modules/.bin/initd-forever --app "$DIR/index.js /etc/socksv5.conf" -n socksv5 -f $DIR/node_modules/.bin/forever > /dev/null
+$DIR/node_modules/.bin/initd-forever --app $DIR/index.js -n socksv5 -f $DIR/node_modules/.bin/forever > /dev/null
 chmod +x socksv5 
 
 # Copy initd script
