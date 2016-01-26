@@ -46,6 +46,10 @@ echo " -> Starting socksv5 daemon"
 systemctl daemon-reload > /dev/null
 /etc/init.d/socksv5 start > /dev/null
 
+# Setup onboot
+echo " -> Setting up on-boot load of socksv5"
+update-rc.d socksv5 defaults > /dev/null 2> /dev/null
+
 # Finished log
 echo "----"
 echo "Socksv5 should be installed as a system daemon now"
