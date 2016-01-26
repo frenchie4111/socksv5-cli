@@ -5,6 +5,8 @@ var os = require( 'os' ),
 
 var network_interfaces = os.networkInterfaces();
 
+var port_i = 1;
+
 var config = _
 	.chain( network_interfaces )
 	.filter( function( interface, name ) {
@@ -16,7 +18,7 @@ var config = _
 	.map( function( interface, name ) {
 		return {
 			host: interface[ 0 ].address,
-			port: 10000 + ( +interface[ 0 ].address.split( '.' )[ 3 ] )
+			port: 1080
 		}
 	} )
 	.value();
