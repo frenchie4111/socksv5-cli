@@ -8,6 +8,12 @@ Hosts socksv5 proxy when given a simple config
 npm install -g socksv5-cli
 ```
 
+## Automated Daemon Installation on Debian
+
+```
+curl -sL https://raw.githubusercontent.com/frenchie4111/socksv5-cli/master/install_debian.sh | bash -
+```
+
 # Ussage:
 
 ```
