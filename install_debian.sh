@@ -10,7 +10,7 @@ echo "Installing Socksv5 as a daemon"
 
 # Install Nodev4
 echo " -> Installing NodeJS"
-echo " --> Adding to nodejs package"
+echo " --> Adding nodejs to packages"
 curl -sL https://deb.nodesource.com/setup_4.x | bash - > /dev/null
 echo " --> Updating apt"
 apt-get -qq update
@@ -19,7 +19,7 @@ apt-get -qq install -y nodejs build-essential
 
 # Install socksv5-cli
 echo " -> Installing socksv5-cli via npm"
-npm install --silent -g socksv5-cli 
+npm install --silent -g socksv5-cli > /dev/null
 
 
 # Find node install directory
@@ -42,7 +42,7 @@ echo " -> Creating base socksv5 config"
 socksv5-gen > /etc/socksv5.conf
 
 # Start initd script
-echo "Starting socksv5 daemon"
+echo " -> Starting socksv5 daemon"
 systemctl daemon-reload > /dev/null
 /etc/init.d/socksv5 start > /dev/null
 
