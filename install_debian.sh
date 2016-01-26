@@ -25,7 +25,7 @@ $DIR/node_modules/.bin/initd-forever --app "$DIR/index.js /etc/socksv5.conf" -n 
 chmod +x socksv5 
 
 # Copy initd script
-cp socksv5 /etc/init.d/
+mv socksv5 /etc/init.d/
 
 # Create base conf file
 socksv5-gen > /etc/socksv5.conf
