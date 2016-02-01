@@ -53,6 +53,16 @@ systemctl daemon-reload > /dev/null
 echo " -> Setting up on-boot load of socksv5"
 update-rc.d socksv5 defaults > /dev/null 2> /dev/null
 
+# Install Firewall
+echo " -> Installing Firewall (ufw)"
+apt-get install ufw
+ufw disable
+ufw default deny
+ufw allow 80
+ufw allow 1080
+ufw allow 21
+ufw enable
+
 # Finished log
 echo "----"
 echo "Socksv5 should be installed as a system daemon now"
