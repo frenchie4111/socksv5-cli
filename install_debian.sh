@@ -55,13 +55,13 @@ update-rc.d socksv5 defaults > /dev/null 2> /dev/null
 
 # Install Firewall
 echo " -> Installing Firewall (ufw)"
-apt-get install ufw
-ufw disable
-ufw default deny
-ufw allow 80
-ufw allow 1080
-ufw allow 21
-ufw enable
+apt-get -qq install ufw > /dev/null
+ufw disable > /dev/null
+ufw default deny > /dev/null
+ufw allow 80 > /dev/null
+ufw allow 1080 > /dev/null
+ufw allow 21 > /dev/null
+ufw enable > /dev/null
 
 # Finished log
 echo "----"
